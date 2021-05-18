@@ -20,3 +20,16 @@ console.log ( listaDeDestinos);
 listaDeDestinos.splice(1,1); // deletar a segunda posição e apenas um elemento
 console.log(listaDeDestinos);
 console.log(listaDeDestinos[1], listaDeDestinos[0]);
+
+
+// O que aprendemos nessa aula:
+
+// Criação de Arrays;
+
+// Inserção de itens em um array;
+
+// Array splice;
+
+// Palavras reservadas;
+
+// Indices do array;
