@@ -7,7 +7,8 @@ const listaDeDestinos = new Array(
 );
 
 const idadeComprador = 20;
-const estaAcompanhada = true;
+const estaAcompanhada = false;
+const temPassagemComprada = true;
 
 console.log("Destinos possíveis: ");
 console.log(listaDeDestinos);
@@ -24,6 +25,20 @@ console.log(listaDeDestinos);
 
 // Atalho para organização = alt + shift + f
 
+if ( idadeComprador >= 18 || estaAcompanhada == true ) {
+    console.log('Obrigado pela preferência! Boa Viagem')
+    listaDeDestinos.splice(2, 1); // removendo item
+}else{
+    console.log("Não é maior de idade e não posso vender");
+}
+
+console.log("Embarcando: \n") // \n pula uma linha
+if ( idadeComprador > 18 && temPassagemComprada == true){
+    console.log("Boa viagem")
+} else {
+    console.log("Você não pode embarcar");
+}
+
 console.log(listaDeDestinos);
 
 // console.log(idadeComprador > 18);
@@ -33,9 +48,14 @@ console.log(listaDeDestinos);
 // console.log(idadeComprador == 18);
 
 
-if ( idadeComprador >= 18 || estaAcompanhada == true ) {
-    console.log('Comprador maior de idade')
-    listaDeDestinos.splice(2, 1); // removendo item
-}else{
-    console.log("Não é maior de idade e não posso vender");
-}
+// O que aprendemos nessa aula:
+
+// If e Else
+
+// Operadores lógicos
+
+// if encadeado
+
+// else if
+
+// && e ||
