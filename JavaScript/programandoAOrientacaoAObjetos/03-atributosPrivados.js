@@ -48,3 +48,8 @@ const cliente3 = new Cliente();
 cliente3.nome= "Matheus";
 cliente3.cpf = 99955566601;
 cliente3.rg = 0943838923;
+
+
+console.log(cliente1);
+console.log(cliente2);
+console.log(cliente3);
