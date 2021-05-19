@@ -1,31 +1,3 @@
-class Cliente{ 
-    nome;
-    cpf;
-    rg;
-}
-
-class ContaCorrente {
-    agencia;
-    // #saldo = 0 para ficar privado e não conseguir ver no console
-    _saldo = 0;
-
-    sacar(valor){
-        if(this._saldo >= valor){
-            this._saldo -= valor;
-            return valor;
-        }
-    }
-
-    depositar(valor){
-        if (valor <= 0 )
-        {
-            return;
-        }
-
-        this._saldo +=valor;
-    }
-}
-
 
 const cliente1 = new Cliente();
 cliente1.nome = "Ricardo";
@@ -52,16 +24,3 @@ const cliente3 = new Cliente();
 cliente3.nome= "Matheus";
 cliente3.cpf = 99955566601;
 cliente3.rg = 0943838923;
-
-
-// O que aprendemos nessa aula:
-
-// Criação de métodos
-
-// Palavra chave this
-
-// Encapsulamento
-
-// Proposta de atributos privados
-
-// return e early return
