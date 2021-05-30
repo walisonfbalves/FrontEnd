@@ -3,11 +3,8 @@ import { Cliente } from "./Cliente.js";
 export class ContaCorrente {
     //atributo estático:
     static numeroDeConta = 0;
-    //atributos
-    agencia;
-    _cliente;
      // #saldo = 0 para ficar privado e não conseguir ver no console
-     _saldo = 0;
+    
 
 
     // acessores: set e get de proteção
@@ -28,6 +25,7 @@ export class ContaCorrente {
     constructor(agencia, cliente) {
         this.agencia = agencia;
         this.cliente = cliente;
+        this._saldo = 0;
         ContaCorrente.numeroDeConta += 1;
         
     }
