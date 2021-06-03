@@ -1,4 +1,4 @@
-export class ContaPoupanca {
+export class Conta {
     constructor(saldoInicial, cliente, agencia){
         this._saldo = saldoInicial;
         this._cliente = cliente;
@@ -20,7 +20,7 @@ export class ContaPoupanca {
          }
          this._saldo +=valor;
      }
-
+     
      transferir(valor, conta); {
 
          const valorSacado = this.sacar(valor);

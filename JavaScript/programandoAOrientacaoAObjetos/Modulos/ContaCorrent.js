@@ -30,7 +30,6 @@ export class ContaCorrente {
         
     }
     
-  
     //metodos: sacar, depositar | parametros: valor, conta
     sacar(valor){
         if(this._saldo >= valor){
@@ -40,7 +39,7 @@ export class ContaCorrente {
     }
 
     depositar(valor){
-        if (valor <= 0 )
+        if (valor <= 100)
         {
             return;
         }
